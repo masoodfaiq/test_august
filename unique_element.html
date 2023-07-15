@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array1 = [1,2,3,4,5];
+        var array2 = [5,9,10];
+        let myunique1 = array1.filter((obj)=> array2.indexOf( obj ) === -1);
+        let myunique2 = array2.filter((obj)=> array1.indexOf( obj ) === -1);
+
+        let unique_array = myunique1.concat(myunique2);
+        console.log(unique_array);
+
+        //output
+       // [1, 2, 3, 4, 9, 10]
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
